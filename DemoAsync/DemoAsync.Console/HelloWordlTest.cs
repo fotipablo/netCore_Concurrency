@@ -19,6 +19,7 @@ namespace DemoAsync.Console
         [Fact]
         public void HolaMundoAsincronico()
         {
+            // HACK: este ejemplo lo tomé de una app WPF, y acá no funciona
             Task.Run(() => {
                 Thread.Sleep(3000);
                 _output.WriteLine("Hello World (Async) Thread 2!");
